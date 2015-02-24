@@ -1,0 +1,165 @@
+/* ************************************************
+** COLORS
+************************************************** */
+/* BOOTSTRAP STANDARDS */
+/* GREYS */
+/* because spelling */
+/* BLUES */
+/* YELLOWS */
+/* GREENS */
+/* ORANGES */
+/* REDS */
+/* PURPLES */
+/* TEALS */
+/* ************************************************
+** COLORS IN CONTEXT
+************************************************** */
+/* ex: @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.075)); */
+/* line 10, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing {
+  /* smallest viewport - like mobile app */
+  /*end of 380px media query*/
+}
+/* line 12, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing h3 {
+  margin: 0;
+}
+/* line 14, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  color: #555;
+  background-color: #eaf1f7;
+  border: 1px solid #ccc;
+  line-height: 19px;
+  margin: 0 0 15px -15px;
+  min-width: 190px;
+  padding: 20px;
+}
+/* line 25, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .photo img {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+/* line 32, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .family-name {
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* line 37, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .given-name {
+  color: #000;
+}
+/* line 41, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .title {
+  clear: both;
+  display: block;
+  font-size: 12px;
+  font-style: italic;
+}
+/* line 47, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .dpt {
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 52, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .adr {
+  font-size: 12px;
+}
+/* line 56, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .tel {
+  clear: both;
+  display: block;
+  font-size: 15px;
+  font-weight: 900;
+}
+/* line 62, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .tel .type {
+  color: #555;
+  display: inline;
+  font-size: 12px;
+  font-weight: normal;
+}
+/* line 69, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard hr {
+  border-bottom: 1px solid #ccc;
+  margin: 3px 0;
+}
+/* line 73, ../../app/assets/stylesheets/directory.css.scss */
+.directory-listing .vcard .email {
+  font-size: 12px;
+}
+@media (max-width: 380px) {
+  /* line 80, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .col-xxs-12 {
+    margin-bottom: 4px;
+    width: 100%;
+  }
+}
+@media (min-width: 380px) and (max-width: 1199px) {
+  /* line 87, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard {
+    height: 370px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 92, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard {
+    height: 450px;
+  }
+}
+@media (max-width: 380px) {
+  /* line 100, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard {
+    border: none;
+    line-height: 18px;
+    margin-right: 20px;
+    min-width: 190px;
+    padding: 2px;
+  }
+  /* line 108, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard .photo img {
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 5px;
+    width: 77px;
+  }
+  /* line 116, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard .family-name {
+    font-size: 16px;
+  }
+  /* line 120, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard .title {
+    display: inline;
+  }
+  /* line 123, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard .dpt {
+    margin-right: 5px;
+  }
+  /* line 127, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard .tel-type {
+    color: #333;
+    display: inline;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  /* line 133, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard .adr, .directory-listing .vcard hr, .directory-listing .vcard .email {
+    display: none;
+  }
+  /* line 136, ../../app/assets/stylesheets/directory.css.scss */
+  .directory-listing .vcard .tel {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 900;
+  }
+}

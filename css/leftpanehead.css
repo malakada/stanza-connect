@@ -1,0 +1,244 @@
+.menu-main-head{
+  background-color:#eee;
+  color:#555;
+  font-size:16px;
+  height: 35px;
+  line-height:30px;
+  padding:0px 0px 0px 6px;
+  text-align:left;
+  vertical-align:middle;
+}
+
+.menu-main-head .fa-institution{
+  margin-right:5px;
+  margin-top:2px;
+}
+
+#left-menu-wrapper .menu-main-head #add-room-icon{
+  position:absolute;
+  margin:0px;
+  right:6px;
+  top:0px;
+  padding:0px;
+  cursor:pointer; cursor:hand;
+  font-size:20px;
+}
+
+#left-menu-wrapper .menu-sub-head{
+  background-color:#68abe6;
+  color:white;
+  text-transform:uppercase;
+  font-size:11px;
+  padding:5px 2px;
+}
+
+#left-menu-wrapper .menu-sub-head ul{
+  list-style-type: none;
+  line-height:13px;
+  vertical-align:middle;
+}
+
+#left-menu-wrapper .menu-sub-head li{
+  cursor:pointer; cursor:hand;
+  padding:0 8px;
+  display: inline;
+}
+#left-menu-wrapper .menu-sub-head li:first{
+  padding-left:3px !important;
+}
+
+#left-menu-wrapper .menu-sub-head .sub-menu-icon{
+  padding:0 5px;
+}
+
+#left-menu-wrapper .nav-head{
+  background-color: #e9e9e9;
+  font-size: 12px;
+  height: 35px;
+  padding: 10px;
+}
+
+#left-menu-wrapper .nav-head .more{
+  cursor:pointer; cursor:hand;
+}
+
+#chat-tabs {
+  height: calc(100% - 35px);
+  background-color:white;
+  overflow-y:auto;
+  background-color: white;
+  color: #666;
+  float: right;
+  font-size: 1.3em;
+  line-height: 75%;
+  list-style: none outside none;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+}
+#chat-tabs a {
+  border: 0 none;
+  padding: 0px;
+  display:inherit;
+}
+#chat-tabs li {
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #fff;
+  float: left;
+  margin: 0;
+  position: relative;
+  white-space: nowrap;
+  display:table-cell;
+  vertical-align:middle;
+  height:50px;
+}
+#chat-tabs > li {
+  margin: 0;
+  width: 100% !important;
+}
+#chat-tabs .active {
+  background-color: #337ab7;
+  border: 0 none;
+}
+#chat-tabs .active a {
+  background: inherit;
+  color: #eee;
+}
+#chat-tabs .active a:hover {
+  background: none repeat scroll 0 0 transparent;
+}
+#chat-tabs .close:hover {
+  color: black;
+  cursor: pointer;
+}
+#chat-tabs .offline .label {
+  text-decoration: line-through;
+}
+#chat-tabs .unread {
+  background-color: #5e9fe1;
+  border-radius: 8px;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 2px 5px;
+  vertical-align: middle;
+  position: absolute;
+  right: 28px;
+  top: 14px;
+  line-height: 14px;
+  letter-spacing:0px;
+}
+
+.nav > li > a{
+  display:inherit;
+}
+
+.nav > li > a{
+  display:inherit;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+  background-color:inherit;
+}
+
+#chat-tabs li > .fa{
+  font-size:22px;
+  margin:0 12px;
+  line-height:50px;
+  text-shadow:none;
+  vertical-align:middle;
+}
+
+#chat-tabs li .connect-group-chat-icon, #chat-tabs li.active .connect-group-chat-icon{
+  margin:0 12px;
+  line-height:50px;
+  text-shadow:none;
+  height:50px;
+  width:24px;
+  background-size:24px 24px;
+  background-repeat:no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  line-height:50px;
+  vertical-align:middle;
+  background-position: 0 11px;
+}
+
+#chat-tabs li .fa-search{
+  width:24px;
+}
+
+#chat-tabs li .connect-group-chat-icon{
+  background-image: url('/ui/icons/group-chat-icon-222-24x24.png');
+}
+
+#chat-tabs li.active .connect-group-chat-icon{
+  background-image: url('/ui/icons/group-chat-icon-white-24x24.png');
+}
+
+#chat-tabs li .close {
+  background-color: transparent;
+  color: #999;
+  float: right;
+  line-height: 50px;
+  padding: 0 5px 0 0;
+}
+
+#chat-tabs li a.close .fa {
+  line-height: 50px;
+}
+
+#chat-tabs li.active .fa {
+  color: white;
+}
+
+.room-label-div {
+  cursor: pointer;
+  font-size: 0.9em;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.room-label-div small {
+  font-size: 0.6em;
+}
+
+li.active .room-label-div {
+  color: white;
+}
+
+.modal-room-li {
+  border-bottom: solid #ddd 1px;
+  color: #555;
+  cursor: pointer;
+  font-size: 0.9em;
+  height: 40px;
+  line-height: 40px;
+  max-height: 40px;
+  min-height: 40px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.modal-room-li i.fa-lock {
+  font-size: 1.2em;
+  position: relative;
+  top: 2px;
+}
+
+#header.connect {
+  color: #0e61b3;
+  border-bottom:solid #ccc 1px;
+  font-size: 19px;
+  font-weight: 700;
+  height: 36px;
+  line-height: 35px;
+  position: initial;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.show-lobby{
+  cursor:pointer;
+}

@@ -1,0 +1,29 @@
+li.message.grouped {
+  margin-top: -10px !important;
+}
+
+li.message.grouped .avatar-icon {
+  display: none;
+}
+
+li.message.grouped .upper {
+  display: none;
+}
+li.message.grouped:hover .upper {
+  display: initial;
+}
+/* Always hide the name */
+li.message.grouped .upper .name {
+  display: none;
+}
+
+
+li.message.grouped .message-bubble {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+li.message.grouped-parent .message-bubble {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}

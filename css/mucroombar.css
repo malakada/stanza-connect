@@ -1,0 +1,325 @@
+.roombar {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  height: 70px;
+  line-height:75px;
+  width: 100%;
+  padding: 0px 3px;
+  z-index: 2;
+  margin-top:-35px;
+  position:relative;
+}
+
+.roombar .roomname{
+  display:inline-block;
+  position:absolute;
+  top:10px;
+  left:40px;
+  height:30px;
+  line-height:30px;
+  vertical-align:middle;
+  font-size:22px;
+  color: #555;
+  cursor: pointer;
+  width:calc(100% - 30px - 60px);
+}
+
+.roombar .topic {
+  display:inline-block;
+  position:absolute;
+  top:40px;
+  left:40px;
+  height:20px;
+  line-height:20px;
+  vertical-align:top;
+  color: #555;
+  font-size: 14px;
+  width:calc(100% - 30px - 70px);
+}
+
+.roombar .topic.is-moderator {
+  cursor: pointer;
+}
+.roombar .topic.no-topic-set {
+  font-style: italic;
+}
+
+.roombar input[type="text"] {
+  background-color: rgba(255,255,255,0.1);
+  bottom: 1px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+.roomtype-lobby .message-pane-wrapper {
+  padding-bottom:0px;
+  padding-top:0px;
+}
+.roomtype-groupchat .message-pane-wrapper {
+  padding-bottom: 70px;
+  padding-top: 35px;
+}
+.roomtype-chat .message-pane-wrapper {
+  padding-bottom: 30px;
+  padding-top: 35px;
+}
+.message-pane-wrapper {
+  margin-bottom: -30px;
+}
+
+#chat-rooms .roster-wrapper .pane-heading .invite-users {
+  float: right;
+  margin: 2px;
+}
+
+.tt-dropdown-menu {
+  background: white;
+  width: 100%;
+}
+
+#invite-users-muc input:disabled {
+  display: none;
+}
+
+#invite-users-muc input {
+  background: white !important;
+}
+
+.tagholder {
+  height:0px;
+  overflow:hidden;
+}
+
+.topic input {
+  border-radius: 6px;
+  color: #555;
+  cursor: default;
+  display: block;
+  margin: 2px;
+  padding: 2px;
+  white-space: nowrap;
+}
+
+.input-tag .close-input-tag {
+  padding-left: 10px;
+}
+
+.tt-cursor {
+  background-color: rgba(23,90,176,0.2);
+}
+
+#chat-history-loading{
+  text-align:center;
+  height:30px;
+  line-height:30px;
+  vertical-align:middle;
+  font-size:20px;
+}
+
+.history-loaded{
+  position:absolute;
+  display:none;
+  text-align:center;
+  background: none repeat scroll 0 0 rgba(200, 200, 200, 0.8);
+  border-radius:4px;
+  font-size: 0.8em;
+  font-weight: bold;
+  left: 0;
+  margin: 0 auto;
+  padding: 3px 0;
+  right: 0;
+  text-shadow: 0 0 2px white;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 60%;
+}
+
+.twitter-typeahead{
+  height:40px;
+}
+
+.twitter-typeahead input{
+  height:35px;
+  padding:0px!important;
+  margin:0px!important;
+  width:100%;
+}
+
+.invite-modal-ul li{
+  position:relative;
+  height:40px;
+  margin-bottom:5px;
+}
+
+.invite-modal-ul li img{
+  max-height:32px;
+  max-width:32px;
+  border-radius:4px;
+  position:absolute;
+  top:4px;
+  left:0px;
+}
+.invite-modal-ul li .invited-user-list-name-status{
+  display:inline-block;
+  position:absolute;
+  height:40px;
+  top:0px;
+  left:36px;
+  width:calc(100% - 36px - 20px);
+}
+
+.invite-modal-ul li .invited-user-list-name{
+  font-size: 0.9em;
+  font-weight: bold;
+  position:absolute;
+  top:4px;
+  left:0px;
+  width:100%;
+  white-space:nowrap;
+}
+
+.invite-modal-ul li .invited-user-list-status{
+  font-size:.75em;
+  color:#777;
+  position:absolute;
+  bottom:1px;
+  left:0px;
+  width:100%;
+  white-space:nowrap;
+}
+
+.invite-modal-ul li .invited-user-list-status i{
+  font-size:.8em;
+}
+
+.invite-modal-ul li i.fa-remove{
+  float:right;
+  line-height:40px;
+  vertical-align:middle;
+  cursor:pointer;
+}
+
+.individual_roombar {
+  background-color: #eee;
+  border-bottom: 1px solid #ccc;
+  height: 35px;
+  line-height:35px;
+  width: 100%;
+  padding: 0px 3px;
+  z-index: 2;
+  margin-top:-35px;
+  position:relative;
+}
+
+.individual_roomname{
+  left: 0 !important;
+  padding-left: 5px;
+  top: 0 !important;
+}
+
+.roombar-dropdown{
+  float:right;
+  height:75px;
+  height:75px;
+  vertical-align:middle;
+  white-space:nowrap;
+}
+
+.individual-roombar-dropdown{
+  float:right;
+  height:35px;
+  height:35px;
+  vertical-align:middle;
+  white-space:nowrap;
+}
+
+.roombar .fa, .individual_roombar .fa{
+  margin-right: 5px;
+  vertical-align: text-top;
+}
+
+.roombar .caret, .individual_roombar .caret{
+  margin-right:10px;
+}
+
+.roombar .options-box, .individual_roombar .options-box{
+  line-height:28px;
+}
+
+.roombar .dropdown-menu, .individual_roombar .dropdown-menu{
+  margin-top:-12px;
+  min-width:185px;
+}
+
+.roombar .triangle, .individual_roombar .triangle{
+  background-image: url("/ui/widgets/triangle.png");
+  background-size: 14px 7px;
+  height: 7px;
+  margin-left: 70%;
+  margin-top: -12px;
+  width: 14px;
+}
+
+.roombar .room-navigation li:first-child, .individual_roombar .room-navigation li:first-child{
+  margin-top:5px;
+}
+
+.roombar .room-navigation li:hover, .individual_roombar .room-navigation li:hover{
+  background-color:#fafafa;
+}
+
+.roombar .room-navigation li a, .individual_roombar .room-navigation li a {
+  border-bottom: 1px solid #e0e0e0;
+  color: #535457;
+  display: block;
+  margin: 0 10px;
+  padding: 6px 0;
+}
+
+.roombar .room-navigation li:last-child a, .individual_roombar .room-navigation li:last-child a {
+  border-bottom: none;
+}
+
+.roombar .roombar-searchbox, .individual_roombar .roombar-searchbox{
+  overflow: hidden;
+  position: absolute;
+  height: 0px;
+  top: 75px; left:0px;
+  width: 100%;
+  background-color:#fefefe;
+  text-align:center;
+}
+
+.roombar .roombar-searchbox input.search-room-input, .individual_roombar .roombar-searchbox input.search-room-input{
+  position:absolute;
+  top:4px;
+  left:1%;
+  height:32px;
+  line-height:32px;
+  vertical-align:middle;
+  width:98%;
+  padding:0 106px 0 24px;
+  background-color: rgba(255,255,255,1);
+  border:solid #ddd 1px;
+  border-radius:4px;
+}
+
+.roombar .roombar-searchbox .fa-search-disabled, .individual_roombar .roombar-searchbox .fa-search-disabled{
+  position: absolute;
+  top:12px;
+  left:17px;
+  color:#ccc;
+  font-size:16px;
+  z-index:10;
+}
+
+.roombar .roombar-searchbox .close-room-search, .individual_roombar .roombar-searchbox .close-room-search{
+  position: absolute;
+  top:12px;
+  right:12px;
+  color:#ccc;
+  font-size:16px;
+  z-index:10;
+  cursor:pointer; cursor:hand;
+}

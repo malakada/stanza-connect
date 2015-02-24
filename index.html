@@ -1,0 +1,194 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="m-pikabu-transitions m-pikabu-translate3d">
+  <head>
+    <style>
+      .m-pikabu-sidebar, #candy {
+      -webkit-transition: -webkit-transform 0.2s ease-in;
+      -moz-transition: -moz-transform 0.2s ease-in;
+      -ms-transition: -ms-transform 0.2s ease-in;
+      -o-transition: -o-transform 0.2s ease-in;
+      transition: transform 0.2s ease-in;
+      }
+      .m-pikabu-left-visible .m-pikabu-left {
+        width: 90%;
+      }
+      .m-pikabu-right-visible .m-pikabu-right {
+        width: 90%;
+      }
+    </style>
+</head>
+
+<body class="empty body-connect" data-no-turbolink="" style="width: auto;">
+
+<div class="page-container">
+  <div class="new-style">
+    <div id="spinner" style="display:none">
+      <span class="badge alert-info"><i class="fa fa-refresh fa-spin fa-3x"></i></span>
+    </div>
+  </div>
+
+  <div id="main-view">
+      <div class="new-style">
+        <link href="css/directory.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/connect.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/typingnotifications.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/createroom.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/staticlobby.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/mucroombar.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/dragdrop.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/namecomplete.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/notifyme.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="//cdn.mobify.com/modules/pikabu/0.2.2/pikabu.css">
+        <link href="css/mobiledisplay.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/leftpanehead.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/useravatar.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/searchhistory.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/grouped-messages.css?body=1" media="screen" rel="stylesheet" type="text/css">
+        <link href="css/lefttabsmorepeople.css?body=1" media="screen" rel="stylesheet" type="text/css">
+
+        <script type="text/javascript">
+          BOSH_SERVICE = "http://10.203.175.33:5280/http-bind";
+        </script>
+
+        <!-- <script src="/ui/connect/navigable_list.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/libs.min.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/candy.bundle.js?body=1" type="text/javascript"></script>
+        <script src="/ui/jquery.ba-throttle-debounce.min.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/lefttabs.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/lefttabsmorepeople.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/autojoininvites.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/typingnotifications.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/createroom.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/createroom-phrg.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/searchroster.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/searchhistory.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/infinitescroll.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/leftpanehead.js?body=1" type="text/javascript"></script>
+        <script src="/ui/strophe.roster.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/slash-commands.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/roombar.js?body=1" type="text/javascript"></script>
+        <script src="/ui/jquery-fileupload/vendor/jquery.ui.widget.js?body=1" type="text/javascript"></script>
+        <script src="/ui/jquery-fileupload/jquery.iframe-transport.js?body=1" type="text/javascript"></script>
+        <script src="/ui/jquery-fileupload/jquery.fileupload.js?body=1" type="text/javascript"></script>
+        <script src="/ui/jquery-fileupload/basic.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/dragdrop.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/inline-images.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/namecomplete.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/notifyme.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/notifications.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/room_anchors.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/keyboardshortcuts.js?body=1" type="text/javascript"></script>
+        <script src="/ui/twitter/typeahead/typeahead.bundle.js?body=1" type="text/javascript"></script>
+        <script src="/ui/twitter/typeahead.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/mobiledisplay.js?body=1" type="text/javascript"></script>
+        <script src="/ui/pikabu.min.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/hashtags.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/useravatars.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/pastedata.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/grouped-messages.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/welcome.js?body=1" type="text/javascript"></script>
+        <script src="/ui/candy/keyboardshortcutslefttabs.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/connectheader.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/ooovcard.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/bookmark.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/heartbeat.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/joinonresponse.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/favicon.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/muc_full_roster.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect/muccontextmenu.js?body=1" type="text/javascript"></script>
+        <script src="/ui/connect.js?body=1" type="text/javascript"></script> -->
+
+        <div class="container-fluid">
+          <div id="candy">
+            <div class="m-pikabu-overlay"></div>
+            <div id="chat-pane" class="role-moderator affiliation-owner">
+              <div class="row">
+                <div class="col-xs-12 connect" id="header">
+                  <div class="row">
+                    <div class="col-xs-4">
+                      <i class="connect-icon-chats"></i>Connect
+                    </div>
+                    <div class="col-xs-3" id="global-search-div" style="text-align:center;">
+                      <i class="fa fa-search fa-search-disabled"></i>
+                      <input type="text" id="global-search-input" placeholder="Search Chat History" />
+                    </div>
+                  </div>
+                  <div id="mobile-top-bar" class="row" style="display: none;">
+                    <a class="toggle-mobile-chat-drawer m-pikabu-nav-toggle" data-role="left">
+                      <button class="btn btn-default btn-s">
+                        <span class="glyphicon glyphicon-comment"></span>
+                      </button>
+                    </a>
+                    <a class="toggle-mobile-people-drawer m-pikabu-nav-toggle" data-role="right">
+                      <button class="btn btn-default btn-s">
+                        <span class="glyphicon glyphicon-list"></span>
+                      </button>
+                    </a>
+                    <span class="mobile-top-bar-roomname"></span>
+                    <span class="mobile-top-bar-roomtopic">No topic set.</span>
+                  </div>
+                </div>
+              </div>
+              <div id="context-menu">
+                <i class="arrow arrow-top"></i>
+                <ul></ul>
+                <i class="arrow arrow-bottom"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div id="left-menu-wrapper" class="col-xs-3 full-height" style="height: 767px;">
+                <div id="mobile-rooms-header" class="menu-main-head pane-heading">
+                  <span class="title">Conversations</span>
+                </div>
+                <ul id="chat-tabs" class="nav nav-tabs nav-stacked">
+                  <li id="search-head" class="nav-head" style="position:relative;">
+                    <div class="pull-left">Search Results</div>
+                  </li>
+                  <li id="rooms-head" class="nav-head" style="position:relative;">
+                    <div class="pull-left">Rooms</div>
+                    <div class="more pull-right" id="rooms-icon">+ More</div>
+                  </li>
+                  <li id="people-head" class="nav-head">
+                    <div class="pull-left">People</div>
+                    <div class="more pull-right" id="rooms-icon">+ More</div>
+                  </li>
+                </ul>
+              </div>
+              <div id="chat-rooms-wrapper" class="col-xs-9 full-height" style="height: 767px;">
+                <div id="chat-rooms" class="row rooms"></div>
+              </div>
+            </div>
+            <div id="chat-modal" tabindex="0" class="modal-common" style="display: none;">
+              <a id="admin-message-cancel" class="close" href="javascript:void(0)" style="display: inline;">×</a>
+              <span id="chat-modal-body"></span>
+            </div>
+            <div id="chat-modal-overlay" style="display: none;"></div>
+          </div>
+        </div>
+        <form accept-charset="UTF-8" action="/api/v1/connect/shared_files" class="new_connect_shared_file" enctype="multipart/form-data" id="fileupload" method="post">
+          <div style="margin:0;padding:0;display:inline">
+            <input name="utf8" type="hidden" value="✓">
+            <input name="authenticity_token" type="hidden" value="2YcLbB3mnAiPW8I56xi9LcTysk3MaLXkHKSqts5jKAE=">
+          </div>
+          <input id="connect_shared_file_file" name="connect_shared_file[file]" type="file">
+        </form>
+        <div id="callbox" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Click 2 Call</h4>
+              </div>
+              <div class="modal-body">
+                <p>Starting...</p>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
